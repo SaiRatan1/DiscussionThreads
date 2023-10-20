@@ -1,9 +1,8 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/userSchema')
-    
+
 const authenticate = async (req,res,next)=>{
     try{
-
         const token = req.cookies.accessToken;
 
         if(!token){
@@ -27,9 +26,7 @@ const authenticate = async (req,res,next)=>{
     catch(error){
         // console.log(error);
         res.status(401).json({message:"Unautherized user"})
-
     }
-
 }
 
 module.exports = authenticate

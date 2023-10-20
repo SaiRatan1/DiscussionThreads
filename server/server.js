@@ -29,7 +29,8 @@ const User = require('./models/userSchema')
 app.get('/api/test',(req,res)=>{
     res.send({"mess":"Hello from test"})
 })
-
+const threadroutes = require('./routes/threadroutes')    
+app.use('/api/threads',threadroutes);
 
 
 // LOGIN ROUTE

@@ -89,7 +89,7 @@ const Signup = () => {
     return (
         <div className='flex flex-col h-screen'>
             {/* <Navbar /> */}
-            <div className="c2 flex-grow flex flex-col items-center justify-center h-screen gap-3  bg-gray-100">
+            <div className="c2 flex flex-grow  flex-col items-center justify-center h-screen gap-3  bg-gray-100">
                 <div className='flex flex-col justify-center items-center w-[400px] bg-white'>
                     <p className='mb-5 text-xl font-semibold pt-6'>Sign Up For Amazing Features</p>
                     <div className='flex flex-col items-center justify-center gap-4  w-full  p-6  '>
